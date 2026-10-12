@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.robotapp.RobotController" style="-fx-background-color: #f4f4f4;">
+    <top>
+        <Label fx:id="modeLabel" text="MANUÁLNY režim" style="-fx-font-size: 16px; -fx-font-weight: bold;">
+            <BorderPane.margin><Insets top="12" right="12" bottom="12" left="12"/></BorderPane.margin>
+        </Label>
+    </top>
+    <center>
+        <Pane fx:id="robotPane" focusTraversable="true" style="-fx-background-color: white; -fx-border-color: #555; -fx-border-width: 2;">
+            <BorderPane.margin><Insets right="12" bottom="12" left="12"/></BorderPane.margin>
+        </Pane>
+    </center>
+    <bottom>
+        <Label text="W/A/S/D = pohyb • klik na robota = manuálny/automatický režim • modrý = manuálny, oranžový = automatický" wrapText="true">
+            <BorderPane.margin><Insets top="0" right="12" bottom="12" left="12"/></BorderPane.margin>
+        </Label>
+    </bottom>
+</BorderPane>
