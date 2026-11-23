@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <center>
+        <HBox spacing="10.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+            <children>
+                <TableView fx:id="table1" HBox.hgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="table1_title" prefWidth="160.0" text="title" />
+                        <TableColumn fx:id="table1_length" prefWidth="80.0" text="length" />
+                        <TableColumn fx:id="table1_year" prefWidth="80.0" text="year" />
+                        <TableColumn fx:id="table1_link" prefWidth="210.0" text="link" />
+                    </columns>
+                </TableView>
+                <TableView fx:id="table2" prefWidth="220.0">
+                    <columns>
+                        <TableColumn fx:id="table2_genre" prefWidth="215.0" text="genre" />
+                    </columns>
+                </TableView>
+            </children>
+        </HBox>
+    </center>
+    <bottom>
+        <VBox BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+            </padding>
+            <children>
+                <Label fx:id="label" text="Movie {TITLE} in {X} genres" />
+            </children>
+        </VBox>
+    </bottom>
+</BorderPane>
